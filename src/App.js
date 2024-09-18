@@ -17,7 +17,7 @@ const App = () => {
   };
   const Calculate = () => {
     try {
-      setResult(eval(input))
+      setResult(eval (input));
     } catch (error) {
       setResult("error")
     }
