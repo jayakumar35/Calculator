@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.calculator {
+  width: 350px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.calculator h1{
+  color:#fff ;
+  font-family: sans-serif;
+}
+
+.display {
+  margin-bottom: 10px;
+  border: none;
+}
+
+.display input {
+  width: 93%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: right;
+  background: #000;
+  border: none;
+  color: #fff;
+  font-size: 45px;
+
+}
+
+.result {
+  margin-top: 5px;
+  font-size: 45px;
+  color: #fff;
+  
+}
+
+.keypad button {
+  width: 65px;
+  height: 65px;
+  margin: 5px;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+.btn1{
+  background: #a1bdbee2;
+  }
+ .btn2{
+  background:rgba(255, 176, 6, 0.952);
+  color: #fffffff3;
+
+ } 
+ .btn3{
+  background: #2f3937;
+  color: white;
+  font-size: 15px;
+ }
+ #zoro{
+ width: 150px;
+ background: #2f3937;
+ color: #fff;
+
+ border-top-left-radius: 35px;
+ border-top-right-radius: 35px;
+ border-bottom-left-radius: 35px;
+ border-bottom-right-radius: 35px;
+ text-align: start;
+ font-size: 35px;
+ padding-left: 15px;
+ }
