@@ -17,12 +17,13 @@ const App = () => {
   };
   const Calculate = () => {
     try {
-      setResult(eval (input));
+      // Create a new function to evaluate the mathematical expression
+      const result = new Function('return ' + input)();
+      setResult(result);
     } catch (error) {
-      setResult("error")
+      setResult('Error');
     }
-
-  }
+  };
   document.addEventListener('keydown', function (evant) {
     const key = evant.key;
     const validkeys = '0123456789/*-+.%';
