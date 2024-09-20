@@ -40,9 +40,9 @@ const App = () => {
   )
 
   return (
-    <Container>
+    <Container className='cal-container'>
       <Row>
-        <Col>
+        <Col sm={12} md={12} lg={12}>
           <div className="calculator">
             <h1>React Calculator</h1>
             <div className="display">
