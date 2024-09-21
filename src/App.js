@@ -16,13 +16,12 @@ const App = () => {
     setResult('');
   };
   const Calculate = () => {
-    try {
-      // Create a new function to evaluate the mathematical expression
-      const result = new Function('return ' + input)();
-      setResult(result);
-    } catch (error) {
-      setResult('Error');
-    }
+      try {
+        const result = Function('"use strict";return (' + input + ')')(); // Safer eval replacement
+        setInput(result.toString());
+      } catch (error) {
+        setInput('Error');
+      }
   };
   document.addEventListener('keydown', function (evant) {
     const key = evant.key;
